@@ -269,7 +269,7 @@ button .flowers {
 }
 
 .macbutton img {
-  width: 25px;
+  width: 20px;
 }
 
 .herobanner img {
@@ -351,14 +351,29 @@ button .flowers {
 
 .firstsection a {
   color: black;
+   position: relative;
   text-decoration: none;
+}
+
+.firstsection a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(107, 91, 91, 0.895);
+  transition: width 0.3s ease;
+}
+
+.firstsection a:hover::after {
+  width: 100%;
 }
 
 .bi-arrow-return-right {
   color: #000;
   font-weight: 900;
 }
-
 
 .introanim {
   margin-top: 100px;
@@ -411,6 +426,13 @@ button .flowers {
 .span1 {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or set a height */
+}
+
+.span1 a {
+  margin-top: auto; /* pushes link to bottom */
 }
 
 .span1:hover {
@@ -423,13 +445,20 @@ button .flowers {
 }
 
 .span1 p {
-  font-size: 25px;
+  font-size: 20px;
   color: #003399;
 }
 
 .span2 {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or set a height */
+}
+
+.span2 a {
+  margin-top: auto; /* pushes link to bottom */
 }
 
 .span2 h1 {
@@ -438,7 +467,7 @@ button .flowers {
 }
 
 .span2 p {
-  font-size: 25px;
+  font-size: 20px;
   color: #3296ff;
 }
 
@@ -453,6 +482,13 @@ button .flowers {
 .span3 {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or set a height */
+}
+
+.span3 a {
+  margin-top: auto; /* pushes link to bottom */
 }
 
 .span3 h1 {
@@ -461,7 +497,7 @@ button .flowers {
 }
 
 .span3 p {
-  font-size: 25px;
+  font-size: 20px;
   color: #069b40;
 }
 
@@ -476,7 +512,15 @@ button .flowers {
 .span4 {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or set a height */
 }
+
+.span4 a {
+  margin-top: auto; /* pushes link to bottom */
+}
+
 
 .span4 h1 {
   font-size: 40px;
@@ -484,7 +528,7 @@ button .flowers {
 }
 
 .span4 p {
-  font-size: 25px;
+  font-size: 20px;
   color: #e5288e;
 }
 
@@ -499,6 +543,13 @@ button .flowers {
 .span5 {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or set a height */
+}
+
+.span5 a {
+  margin-top: auto; /* pushes link to bottom */
 }
 
 .span5 h1 {
@@ -507,7 +558,7 @@ button .flowers {
 }
 
 .span5 p {
-  font-size: 25px;
+  font-size: 20px;
   color: #0c1825;
 }
 
@@ -522,6 +573,13 @@ button .flowers {
 .span6 {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or set a height */
+}
+
+.span6 a {
+  margin-top: auto; /* pushes link to bottom */
 }
 
 .span6 h1 {
@@ -530,7 +588,7 @@ button .flowers {
 }
 
 .span6 p {
-  font-size: 25px;
+  font-size: 20px;
   color: #ff783c;
 }
 
@@ -542,10 +600,25 @@ button .flowers {
   color: white;
 }
 
-.animationcards span a {
+.animationcards a {
+  color: black;
+   position: relative;
   text-decoration: none;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.animationcards a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(107, 91, 91, 0.895);
+  transition: width 0.3s ease;
+}
+
+.animationcards a:hover::after {
+  width: 100%;
 }
 
 .animationcards span img {
@@ -587,13 +660,31 @@ button .flowers {
 }
 
 .secondsection a {
+  position: relative;
   color: white;
   text-decoration: none;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.secondsection a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.815);
+  transition: width 0.3s ease;
+}
+
+.secondsection a:hover::after {
+  width: 100%;
+}
+
+
 .secondsection .bi-arrow-return-right {
+  position: relative;
   color: white;
   font-weight: 900;
 }
@@ -680,6 +771,157 @@ button .flowers {
   width: 160px;
 }
 
+.section5 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  max-width: 1000px;
+  width: 90%;
+  margin-top: 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+/* ===== Testimony Card ===== */
+.testimony {
+  width: 100%;
+  max-width: 400px;
+  max-height: 360px;
+  background-color: #f2f7f8;
+  border: 10px solid #0c1926;
+  border-bottom: 0;
+  border-radius: 45px 45px 0 0;
+  overflow: hidden;
+}
+
+.person {
+  background-color: #ffffff;
+  width: 360px;
+  border-radius: 20px;
+  font-size: 13px;
+  padding: 20px;
+  margin-top: 20px;
+  animation: scroll 30s linear infinite;
+}
+
+.person img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+
+.person h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #122231;
+}
+
+.person p {
+  font-size: 12px;
+  text-align: justify;
+  color: #606f7d;
+}
+
+.pro {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-300px);
+  }
+}
+
+/* ===== Avatar Stack ===== */
+.them {
+  display: flex;
+  align-items: center;
+}
+
+.them .five {
+  width: 50px;
+  height: 50px;
+  margin-left: -12px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.them .five:first-child {
+  margin-left: 0;
+}
+
+.them .five img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.them .five:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* ===== Last Circle (5m+) ===== */
+.them .five:last-child {
+  background: #fff;
+  color: #3d4f60;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Text & Buttons ===== */
+.h {
+  margin: 40px 0;
+}
+
+.h h6 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.why button {
+  background: #f2f7f8;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.why img {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.it {
+  align-content: center;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -740,6 +982,25 @@ footer div {
 .fut5 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
+}
+
+.footer-bottom {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-size: 12px;
+  color: #777;
+}
+
+.footer-bottom h6 {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.footer-bottom p {
+  color: rgb(67, 67, 223);
 }
 
 @media (max-width: 768px) {
@@ -842,6 +1103,10 @@ footer div {
 
   .animationcards span img {
     width: 150px;
+  }
+
+  .section5 {
+    flex-wrap: wrap;
   }
 
   .secondsection div {
@@ -977,4 +1242,3 @@ footer div {
     text-align: center;
   }
 }
-
